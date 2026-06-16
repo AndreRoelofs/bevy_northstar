@@ -104,7 +104,7 @@ pub fn setup_hud(mut commands: Commands) {
         .spawn((
             Text::new("Key [p]| Algorithm: "),
             TextFont {
-                font_size: 24.0,
+                font_size: FontSize::Px(24.0),
                 ..default()
             },
             Node {
@@ -117,7 +117,7 @@ pub fn setup_hud(mut commands: Commands) {
         .with_child((
             TextSpan::default(),
             TextFont {
-                font_size: 24.0,
+                font_size: FontSize::Px(24.0),
                 ..default()
             },
             PathfindTypeText,
@@ -127,7 +127,7 @@ pub fn setup_hud(mut commands: Commands) {
         .spawn((
             Text::new("Avg Path Time: "),
             TextFont {
-                font_size: 24.0,
+                font_size: FontSize::Px(24.0),
                 ..default()
             },
             Node {
@@ -140,7 +140,7 @@ pub fn setup_hud(mut commands: Commands) {
         .with_child((
             TextSpan::default(),
             TextFont {
-                font_size: 24.0,
+                font_size: FontSize::Px(24.0),
                 ..default()
             },
             StatText,
@@ -150,7 +150,7 @@ pub fn setup_hud(mut commands: Commands) {
         .spawn((
             Text::new("Key [c]| Collision: "),
             TextFont {
-                font_size: 24.0,
+                font_size: FontSize::Px(24.0),
                 ..default()
             },
             Node {
@@ -163,7 +163,7 @@ pub fn setup_hud(mut commands: Commands) {
         .with_child((
             TextSpan::default(),
             TextFont {
-                font_size: 24.0,
+                font_size: FontSize::Px(24.0),
                 ..default()
             },
             CollisionText,

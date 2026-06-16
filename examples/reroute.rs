@@ -93,7 +93,7 @@ fn startup(mut commands: Commands) {
     commands.spawn((
         Text::new("RIGHT CLICK to toggle walls - agents reroute automatically"),
         TextFont {
-            font_size: 22.0,
+            font_size: FontSize::Px(22.0),
             ..default()
         },
         Node {
