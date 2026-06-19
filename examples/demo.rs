@@ -20,7 +20,7 @@ fn main() {
         .add_plugins(FpsOverlayPlugin {
             config: FpsOverlayConfig {
                 text_config: TextFont {
-                    font_size: 32.0,
+                    font_size: FontSize::Px(32.0),
                     font_smoothing: FontSmoothing::default(),
                     font: default(),
                     ..default()
