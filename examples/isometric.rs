@@ -286,7 +286,7 @@ fn loading_complete(
 
     // Zoom camera into the player
     let (mut transform, mut projection) = camera.into_inner();
-    if let Projection::Orthographic(ref mut ortho) = &mut *projection {
+    if let Projection::Orthographic(ortho) = &mut *projection {
         ortho.scale = 0.5;
         transform.translation = Vec3::new(center.x, center.y + PLAYER_CENTER_OFFSET, 10.0);
     }

@@ -226,7 +226,7 @@ pub fn input<N: Neighborhood + 'static>(
     let mut grid = grid.into_inner();
 
     let (mut transform, mut projection) = camera.into_inner();
-    if let Projection::Orthographic(ref mut ortho) = &mut *projection {
+    if let Projection::Orthographic(ortho) = &mut *projection {
         let mut direction = Vec3::ZERO;
 
         if keyboard_input.pressed(KeyCode::KeyA) {
