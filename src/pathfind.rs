@@ -264,11 +264,10 @@ pub(crate) fn pathfind<N: Neighborhood>(
             limits,
         );
 
-        if let Some(mut path) = path {
+        {
+            let mut path = path?;
             path.path.pop_front();
             return Some(path);
-        } else {
-            return None;
         }
     }
 
