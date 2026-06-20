@@ -59,9 +59,9 @@ features = ["bevy_gizmos", "bevy_log", "bevy_render"]
 
 [dev-dependencies]
 bevy = { version = "0.19", features = ["bevy_dev_tools"] }
-bevy_ecs_tiled = { git = "https://github.com/taboky-dev/bevy_ecs_tiled.git", rev = "6b93c33", features = ["user_properties"] }
-#bevy_panorbit_camera = { version = "0.34.0" }
-#bevy_voxel_world = { git = "https://github.com/AndreRoelofs/bevy_voxel_world.git", branch = "bevy_18" }
+# bevy_ecs_tiled = { git = "https://github.com/taboky-dev/bevy_ecs_tiled.git", rev = "6b93c33", features = ["user_properties"] }
+# bevy_panorbit_camera = { version = "0.34.0" }
+# bevy_voxel_world = { git = "https://github.com/AndreRoelofs/bevy_voxel_world.git", branch = "bevy_18" }
 ndshape = { version = "0.3.0" }
 
 [target.'cfg(not(target_os = "windows"))']
